@@ -146,3 +146,7 @@ To combine with Generalized Captions or Dual Fusion augmentation:
 # Generalized Captions
 --use_clean_prompts
 ```
+
+## RepliBing Dataset is Released in the Google Drive
+
+https://drive.google.com/drive/folders/1fbXncTKn4cfGjaOomxK-XuWN21_SgtI5?usp=sharing
