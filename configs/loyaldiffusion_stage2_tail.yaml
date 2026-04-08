@@ -1,0 +1,29 @@
+pretrained_model_name_or_path: "stabilityai/stable-diffusion-2-1"
+revision: null
+
+instance_data_dir: "./laion_10k_data_2"
+class_prompt: "laion_orig"
+resolution: 512
+center_crop: true
+random_flip: true
+
+train_batch_size: 1
+max_train_steps: 100000
+gradient_accumulation_steps: 1
+learning_rate: 5.0e-6
+lr_scheduler: "constant_with_warmup"
+lr_warmup_steps: 5000
+mixed_precision: "fp16"
+seed: 42
+
+output_dir: "./out_loyaldiffusion_stage2"
+save_steps: 10000
+modelsavesteps: 20000
+duplication: "nodup"
+
+training_phase: "tail"
+t_threshold: 500
+modify_unet_tail: true
+partial_conv_block_list_tail: [2, 3]
+all_conv_type_tail: "single_conv"
+unet_config_path: "./Repli_DiT/unet_config/unet_config.json"

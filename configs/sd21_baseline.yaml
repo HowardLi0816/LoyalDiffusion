@@ -1,0 +1,23 @@
+pretrained_model_name_or_path: "stabilityai/stable-diffusion-2-1"
+revision: null
+
+instance_data_dir: "./laion_10k_data_2"
+class_prompt: "laion_orig"
+instance_prompt_loc: "./laion_10k_data_2/laion_10k_data_2_combined_captions.json"
+resolution: 512
+center_crop: true
+random_flip: true
+
+train_batch_size: 1
+max_train_steps: 100000
+gradient_accumulation_steps: 1
+learning_rate: 5.0e-6
+lr_scheduler: "constant_with_warmup"
+lr_warmup_steps: 5000
+mixed_precision: "fp16"
+seed: 42
+
+output_dir: "./out_baseline_sd21"
+save_steps: 10000
+modelsavesteps: 20000
+duplication: "nodup"

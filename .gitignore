@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+
+# Data
+laion_10k_data_2/
+laion_20k_data/
+tiny-imagenet-200/
+*.tar
+*.zip
+
+# Outputs
+out_*/
+inferences/
+generated_images/
+checkpoints/
+*.png
+*.jpg
+
+# Logs
+*.out
+logs/
+wandb/
+
+# Editor
+.vscode/
+.idea/
+*.swp
